@@ -1,0 +1,187 @@
+html, body
+{
+  width:100%;
+}
+.App {
+  text-align: center;
+  width: 1000px;
+    margin: auto;
+    padding: 0;
+}
+
+.autoComplete{
+  width: 626px;
+    margin: auto;
+    padding: 0;
+}
+.autoComplete .ddlSearch{
+  float: left;
+  width: 586px;
+}
+
+img{
+  width: 55px;
+  float:left;
+  margin: 20px;
+  margin-right: 10px;
+}
+
+li{
+  list-style: none;
+  text-align: left;
+  border: 1px solid white;
+  clear: both;
+}
+
+li:hover
+{
+  background-color:white;
+  cursor: pointer;
+}
+
+h1{
+  color: #36B5B5;
+  text-transform: uppercase;
+  font-size: 55px;
+  margin-top: 157px;
+}
+
+.autoComplete ul
+{
+  width: 530px;
+  margin: auto;
+  padding: 0;
+  background-color: lightgray;
+  max-height: 400px;
+  overflow-y: scroll;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-top: -3px;
+}
+.searchResults{
+  clear:both;
+  padding-top: 60px;
+}
+.searchResults ul
+{
+  margin: auto;
+  padding: 0;
+  background-color: lightgray;
+  max-height: 600px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+input[type="text"]
+{
+  width: 546px;
+    height: 37px;
+    border-radius: 39px;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+button{
+  background-color: #36B5B5;
+    border-radius: 39px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color:white;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.name
+{
+  float: left;
+    width: 70%;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+    color: purple;
+    margin-top: 25px;
+}
+.workTitle
+{
+  float: left;
+    width: 70%;
+    font-size: 10px;
+    margin: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gray;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:end{
+  width:2000px;
+}
+::-webkit-scrollbar-track-piece{
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #36B5B5;
+  height:10px;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+  .App{
+    width:500px;
+  }
+  h1{
+    font-size:30px;
+  }
+  .autoComplete
+  {
+    width:390px;
+  }
+  .autoComplete .ddlSearch {
+    width: 330px;
+  }
+  input[type="text"] {
+    width: 300px;
+  }
+  .autoComplete ul{
+    width:285px;
+  }
+}
+
+@media only screen and (max-width: 500px)
+{
+  .App{
+    width:300px;
+  }
+  h1{
+    font-size:18px;
+  }
+  .autoComplete
+  {
+    width:200px;
+  }
+  .autoComplete
+  {
+    width:270px;
+  }
+  .autoComplete .ddlSearch {
+    width: 230px;
+  }
+  input[type="text"] {
+    width: 200px;
+  }
+  .autoComplete ul{
+    width:190px;
+  }
+}
+
